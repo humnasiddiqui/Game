@@ -316,7 +316,7 @@ def draw_window(surface, grid, score=0, last_score = 0):
  # initializing and styling font   
     pygame.font.init()
     font = pygame.font.SysFont('Times New Roman', 50 , bold = True, italic = True )
-    label = font.render('Tetris by Humna and Kainat', 1, (0,0,0))
+    label = font.render('              Tetris ', 1, (0,0,0))
     window.blit(background_image, [0, 0])
     surface.blit(label,(90, 20))
 
@@ -464,6 +464,6 @@ def main_menu(window):
 # initialize windows with defined height and width
 window = pygame.display.set_mode((s_width, s_height))
 # set the title of game window
-pygame.display.set_caption('Tetris, Project by Humna and Kainat')
+pygame.display.set_caption('Tetris')
 # call main function here
 main_menu(window)
